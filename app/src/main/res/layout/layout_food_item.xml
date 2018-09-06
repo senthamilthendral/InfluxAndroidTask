@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/density_size_16"
+        android:layout_marginRight="@dimen/density_size_16"
+        android:layout_marginTop="@dimen/density_size_16"
+        android:descendantFocusability="blocksDescendants">
+
+        <FrameLayout
+            android:id="@+id/image_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.thendral.android.onlineorder.util.RoundedImageView
+                android:id="@+id/food_image"
+                android:layout_width="match_parent"
+                android:layout_height="260dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_placeholder" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/image_layout"
+            android:background="@drawable/background_rectangle"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/sub_items"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/density_size_8" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_toLeftOf="@+id/action_layout"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/food_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="@dimen/density_size_16"
+                        android:ellipsize="end"
+                        android:maxLines="3"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="@dimen/text_size_16"
+                        tools:text="Food Menu" />
+
+                    <TextView
+                        android:id="@+id/food_cost"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="@dimen/density_size_8"
+                        android:layout_marginStart="@dimen/text_size_16"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/text_size_16"
+                        android:textStyle="bold"
+                        tools:text="AEU:5090" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/action_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/remove_item"
+                        android:layout_width="@dimen/density_button_size"
+                        android:layout_height="@dimen/density_button_size"
+                        android:background="@drawable/ic_minus"
+                        android:backgroundTint="@color/colorWhite" />
+
+                    <TextView
+                        android:id="@+id/food_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/density_size_8"
+                        android:layout_marginRight="@dimen/density_size_8"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/density_text_size_24"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/add_item"
+                        android:layout_width="@dimen/density_button_size"
+                        android:layout_height="@dimen/density_button_size"
+                        android:background="@drawable/ic_plus"
+                        android:backgroundTint="@color/colorWhite" />
+
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+</layout>

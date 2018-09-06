@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="density_16">16dp</dimen>
+    <dimen name="density_24">24dp</dimen>
+    <dimen name="density_text_size_24">24sp</dimen>
+    <dimen name="text_size_16">16sp</dimen>
+    <dimen name="density_size_8">8dp</dimen>
+    <dimen name="density_size_4">4dp</dimen>
+    <dimen name="density_size_16">16dp</dimen>
+    <dimen name="density_button_size">32dp</dimen>
+    <dimen name="density_size_card">216dp</dimen>
+
+</resources>

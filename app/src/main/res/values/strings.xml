@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">OnlineOrder</string>
+    <string name="home_activity_title">F&amp;B</string>
+    <string name="menu_skip">SKIP</string>
+    <string name="pay_text">PAY</string>
+    <string name="summary">F&amp;B SUMMARY</string>
+    <string name="count_text" formatted="false">(%d)</string>
+    <string name="amount_with_currency" formatted="false">%s %s</string>
+</resources>
